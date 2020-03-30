@@ -98,7 +98,7 @@
   margin-top: 45px;
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1200px) {
   .header .nav-bar .link-list {
     margin: auto;
     margin-top: 45px;
@@ -142,7 +142,7 @@
   margin-right: 40px;
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1200px) {
   .header .nav-bar .link-list li {
     margin-right: 50px;
   }
@@ -179,7 +179,7 @@
   margin-right: 70px;
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1200px) {
   .header .nav-bar .link-list li:first-child {
     margin-right: 50px;
   }
@@ -313,7 +313,7 @@
   background-color: grey;
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1200px) {
   .intro .background-image {
     height: 1370px;
   }
@@ -352,7 +352,7 @@
   right: 0;
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1200px) {
   .intro .info-intro {
     width: 100%;
     -webkit-box-align: center;
