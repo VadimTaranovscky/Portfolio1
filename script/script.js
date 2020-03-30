@@ -25,15 +25,15 @@ $(document).ready(function() {
   });
   if (innerWidth > 1200) {
     arrItems.forEach(item => {
-      item.style.display = "none";
+      item.style.opacity = 0;
     });
     for (let item of pictures) {
-      item.style.display = "none";
+      item.style.opacity = 0;
     }
-    newStuff.firstElementChild.style.display = "none";
-    newStuff.lastElementChild.style.display = "none";
+    newStuff.firstElementChild.style.opacity = 0;
+    newStuff.lastElementChild.style.opacity = 0;
     for (let item of infoBlock.children) {
-      item.style.display = "none";
+      item.style.opacity = 0;
     }
     infoIntro.firstElementChild.classList.add("fadeInRight");
     infoIntro.firstElementChild.nextElementSibling.classList.add("fadeInRight");
@@ -98,7 +98,7 @@ const checkPhone = phone => {
 
 const setAnimateClass = kids => {
   for (let item of kids) {
-    item.style.display = "flex";
+    item.style.opacity = 1;
     item.classList.add("animated");
   }
 };
@@ -116,11 +116,11 @@ window.addEventListener("scroll", () => {
   }
   if (pageYOffset >= 2050 && innerWidth > 1200) {
     for (let item of pictures) {
-      item.style.display = "block";
+      item.style.opacity = 1;
       item.classList.add("fadeIn");
     }
     arrItems.forEach(item => {
-      item.style.display = "block";
+      item.style.opacity = 1;
       item.classList.add("fadeInDown");
     });
   }
