@@ -326,6 +326,8 @@
 }
 
 .intro .info-intro {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -350,6 +352,12 @@
   width: 32%;
   top: 118px;
   right: 0;
+}
+
+@media screen and (max-width: 1400px) {
+  .intro .info-intro {
+    width: 35%;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -412,6 +420,12 @@
   font-size: 56px;
 }
 
+@media screen and (max-width: 1400px) {
+  .intro .info-intro .title p {
+    font-size: 44px;
+  }
+}
+
 @media screen and (max-width: 765px) {
   .intro .info-intro .title p {
     font-size: 37px;
@@ -423,7 +437,7 @@
   font-weight: bold;
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 1400px) {
   .intro .info-intro .title h1 {
     font-size: 60px;
   }
@@ -873,7 +887,6 @@
 
 .our-food .table-description .picture-info .row-items .item {
   width: 275px;
-  height: 275px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -888,6 +901,7 @@
   .our-food .table-description .picture-info .row-items .item {
     -webkit-transform: scale(1);
             transform: scale(1);
+    height: 275px;
     margin-bottom: 0;
   }
 }
@@ -1616,7 +1630,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 100px 170px;
+  padding: 100px 0px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1627,12 +1641,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media screen and (max-width: 1200px) {
-  .discover-new-menu {
-    padding: 50px 75px;
-  }
 }
 
 @media screen and (max-width: 765px) {
