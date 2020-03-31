@@ -319,9 +319,15 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .intro .background-image {
+    height: 1050px;
+  }
+}
+
 @media screen and (max-width: 765px) {
   .intro .background-image {
-    height: 810px;
+    height: 825px;
   }
 }
 
@@ -379,7 +385,13 @@
 
 @media screen and (max-width: 765px) {
   .intro .info-intro {
-    top: 250px;
+    top: 200px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .intro .info-intro {
+    top: 100px;
   }
 }
 
