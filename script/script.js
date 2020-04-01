@@ -13,6 +13,21 @@ const pictures = pictureInfoBlock.querySelectorAll(".img-item");
 const arrItems = Array.from(
   pictureInfoBlock.querySelectorAll(".animated-info")
 );
+const images=document.querySelectorAll('img');
+
+lazyload(images);
+
+class Order {
+  constructor(people, date, time, name, email, phone) {
+    this.people = people;
+    this.date = date;
+    this.time = time;
+    this.name = name;
+    this.email = email;
+    this.phone = phone;
+  }
+}
+
 
 $(document).ready(function() {
   $('.parallax').parallax();
@@ -62,17 +77,7 @@ date.value = currentDate
   .reverse()
   .join("-");
 
-class Order {
-  constructor(people, date, time, name, email, phone) {
-    this.id = 1;
-    this.people = people;
-    this.date = date;
-    this.time = time;
-    this.name = name;
-    this.email = email;
-    this.phone = phone;
-  }
-}
+
 
 const checkVal = list => {
   const checkArr = [...list];
@@ -187,3 +192,4 @@ sendOrderElement.addEventListener("click", () => {
     }
   }
 });
+
