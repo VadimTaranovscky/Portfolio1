@@ -13,9 +13,6 @@ const pictures = pictureInfoBlock.querySelectorAll(".img-item");
 const arrItems = Array.from(
   pictureInfoBlock.querySelectorAll(".animated-info")
 );
-const images=document.querySelectorAll('img');
-
-lazyload(images);
 
 class Order {
   constructor(people, date, time, name, email, phone) {
