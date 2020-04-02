@@ -3,7 +3,7 @@ const date = document.getElementById("date");
 const burgerElement = document.querySelector(".burger");
 const linkListElement = document.querySelector(".link-list");
 const linksElements = linkListElement.querySelectorAll("li");
-
+const imagesBlock=document.querySelector('.images-block');
 // only elements for animate
 const infoBlock = document.querySelector(".info-block");
 const newStuff = document.querySelector(".new-stuff");
@@ -13,6 +13,7 @@ const pictures = pictureInfoBlock.querySelectorAll(".img-item");
 const arrItems = Array.from(
   pictureInfoBlock.querySelectorAll(".animated-info")
 );
+
 
 class Order {
   constructor(people, date, time, name, email, phone) {
@@ -36,6 +37,7 @@ $(document).ready(function() {
     $("body,html").animate({ scrollTop: top }, 1000);
   });
   if (innerWidth > 1200) {
+    imagesBlock.insertAdjacentHTML('afterbegin',`<img src="./img/our-food.png" alt="dish" />`);
     arrItems.forEach(item => {
       item.style.opacity = 0;
     });
